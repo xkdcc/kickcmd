@@ -219,3 +219,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+kickcmd.code-workspace
