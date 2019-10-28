@@ -8,15 +8,16 @@ python:
   - "3.7"
 
 # Install the codecov pip dependency and my own lib for testing
-# And run the pytest with codecov.
-# codecov still required per https://github.com/codecov/codecov-python/blob/master/README.md#ci-providers
+# pytest-cov is not enough for travis virtual env. It will report codecov not found.
+# codecov is still required per https://github.com/codecov/codecov-python/blob/master/README.md#ci-providers
 install:
   - pip install pytest-cov pytest codecov
   - python setup.py bdist_wheel
   - pip install dist/kickcmd-*.whl
 
+# And run the pytest with codecov.
 script:
-  - pytest --cov-report term --cov=kickcmd
+  - python -m pytest --cov-report term --cov=kickcmd
 
 after_success:
   - codecov
