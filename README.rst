@@ -1,7 +1,8 @@
 kickcmd
-.. image:: https://travis-ci.org/xkdcc/kickcmd.svg?branch=master
-    :target: https://travis-ci.org/xkdcc/kickcmd
 =======
+
+  .. image:: https://travis-ci.org/xkdcc/kickcmd.svg?branch=master
+      :target: https://travis-ci.org/xkdcc/kickcmd
 
 A wrapper for calling external cmd/scripts
 
