@@ -13,7 +13,12 @@ install:
   - pip install pytest-cov pytest
   - python setup.py bdist_wheel
   - pip install dist/kickcmd-*.whl
+
+script:
   - pytest --cov-report term --cov=kickcmd
 
 after_success:
   - codecov
+
+env:
+  - CODECOV_TOKEN="70124566-6be5-4aba-a225-636bd9c1904a"
