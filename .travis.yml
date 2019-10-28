@@ -6,4 +6,4 @@ python:
 
 script: 
 
-  - python runcmd.py
+  - python kickcmd/runcmd.py
