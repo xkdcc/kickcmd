@@ -7,12 +7,14 @@ language: python
 python:
   - "3.7"
 
-# Install the codecov pip dependency
+# Install the codecov pip dependency and my own lib for testing
 install:
   - pip install pytest-cov pytest
   - python setup.py bdist_wheel
   - pip install dist/kickcmd-*.whl
 
-
 # Run the unit test 
   - pytest --cov-report term --cov=kickcmd
+
+after_success:
+  - codecov
