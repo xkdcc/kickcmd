@@ -10,6 +10,9 @@ python:
 # Install the codecov pip dependency
 install:
   - pip install pytest-cov pytest
+  - python setup.py bdist-wheel
+  - pip install dist/kickcmd-*.whl
+
 
 # Run the unit test 
   - pytest --cov-report term --cov=kickcmd
