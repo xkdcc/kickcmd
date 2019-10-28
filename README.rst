@@ -1,7 +1,7 @@
 kickcmd
 =======
 
-An elegant wrapper for calling external cmd/scripts
+A wrapper for calling external cmd/scripts
 
 Introduction
 ------------
