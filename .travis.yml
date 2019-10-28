@@ -10,7 +10,7 @@ python:
 # Install the codecov pip dependency
 install:
   - pip install pytest-cov pytest
-  - python setup.py bdist-wheel
+  - python setup.py bdist_wheel
   - pip install dist/kickcmd-*.whl
 
 
