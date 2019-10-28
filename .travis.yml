@@ -9,8 +9,9 @@ python:
 
 # Install the codecov pip dependency and my own lib for testing
 # And run the pytest with codecov.
+# codecov still required per https://github.com/codecov/codecov-python/blob/master/README.md#ci-providers
 install:
-  - pip install pytest-cov pytest
+  - pip install pytest-cov pytest codecov
   - python setup.py bdist_wheel
   - pip install dist/kickcmd-*.whl
 
