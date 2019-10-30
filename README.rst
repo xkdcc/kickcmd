@@ -8,7 +8,11 @@ kickcmd
   :target: https://codecov.io/gh/xkdcc/kickcmd
 
 
-A wrapper for calling external cmd/scripts
+This repo is to learn:
+
+1. How to create a Python pip package
+2. How to integrate Travis on github
+3. How to integrate codecov/pytest-cov
 
 How to test
 ------------
