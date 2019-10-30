@@ -8,11 +8,12 @@ kickcmd
   :target: https://codecov.io/gh/xkdcc/kickcmd
 
 
-This repo is to learn:
+This repo is for me to learn:
 
-1. How to create a Python pip package
-2. How to integrate Travis on github
-3. How to integrate codecov/pytest-cov
+1. How to create a Python pip package and test/use it
+2. How to integrate pytest with Python pip setup.py and configure pytest (pytest.ini)
+3. How to use Travis and integrate it with github repo, learn lifecyle of a Travis job
+4. How to use codecov and integrate with Travis
 
 How to test
 ------------
